@@ -51,8 +51,8 @@ class Student
   
   def self.new_from_db(arr)
     new_student = self.new(arr[1], arr[2])
-    binding.pry
     new_student.id = arr[0]
+    new_student
   end
   
   def self.find_by_name
