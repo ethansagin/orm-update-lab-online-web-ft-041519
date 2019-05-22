@@ -48,8 +48,8 @@ class Student
     new_student.save
   end
   
-  def self.new_from_db
-    
+  def self.new_from_db(arr)
+    self.create(arr[1], arr[2])
   end
   
   def self.find_by_name
