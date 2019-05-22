@@ -62,7 +62,7 @@ class Student
       WHERE name = ?
     SQL
     
-    target = DB[:conn].execute(sql, name)
+    DB[:conn].execute(sql, name)
   end
   
   def update
